@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passes | ENSPIRE'25 | 18th - 19th MAR</title>
+    <link rel="icon" type="image/png" href="../images/Enspire-logo.png">
+    <link rel="stylesheet" href="./Passes.css">
+    <style>
+        /* Outer page (Default background) */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Inner Container (With Border & Background Color Inside) */
+.page-container {
+    background-color: white; /* White background inside */
+    border: 2px solid purple;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px; /* Rounded corners */
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: purple;
+}
+
+/* Get Passes Button */
+.get-passes {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Passes Container */
+.pass-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+/* Individual Pass Card */
+.pass {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Silver Pass - Smaller */
+.silver {
+    background: linear-gradient(135deg, #d9d9d9, #f7f7f7, #bfbfbf, #ffffff, #a6a6a6);
+    width: 250px;
+    height: 360px;
+    margin-top: 20px;
+}
+
+/* Gold Pass - Bigger */
+.gold {
+    background: linear-gradient(135deg, #ffd700, #ffcc00, #e6b800, #fff2cc, #d4af37);
+    width: 250px;
+    height: 360px;
+    margin-top: 20px;
+}
+
+/* Platinum Pass - Bigger */
+.platinum {
+    background: linear-gradient(135deg, #e5e4e2, #f0eaff, #dcd6f7, #ffffff, #c8bfff);
+    width: 320px;
+    height: 400px;
+}
+
+/* Most Popular Label */
+.most-popular {
+    background: purple;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
+/* Pass Title and Price */
+.pass h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Price */
+.pass .price {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Features List */
+.pass ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.pass ul li {
+    font-size: 15px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pass-container {
+        flex-wrap: wrap;
+    }
+
+    .pass {
+        max-width: 100%;
+    }
+}
+
+/* Tick Circle */
+.tick-circle {
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Outer main div */
+.main {
+    background-color: white; /* White background */
+    padding: 1px; /* 1px larger than the inner container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: calc(90% + 2px); /* 1px extra on both sides */
+    max-width: 902px; /* 900px + 1px on each side */
+}
+
+/* Inner page-container div */
+.page-container {
+    background-color: #f5f4fa; /* Light lavender inside border */
+    border: 2px solid purple; /* Purple border */
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="page-container">
+            <h2>Grab Your <span class="highlight">Passes</span> Now!</h2>
+            <!--<button class="get-passes">Get Passes</button> -->
+            <br>
+            <br>
+            <div class="pass-container">
+                <div class="pass silver">
+                    <h3>Silver Pass</h3>
+                    <p class="price"><strike>₹400</strike> ₹249</p>
+                    <ul>
+                        <li><div class="tick-circle">&#10004;</div> Speaker session</li> 
+                        <li><div class="tick-circle">&#10004;</div> Abroad Expo</li>  
+                        <li>❌ Entrepreneurship Challenge</li> 
+                        <li>❌ VR Arena</li> 
+                        <li>❌ IPL Auction</li> 
+                        <!--<li>❌ Startup Pool</li>-->
+                        <!--<li>❌ Abroad Study</li>-->
+                        <li>❌ Food</li>   
+                        <li>❌ Standup </li>              
+                    </ul>
+                    <br>
+                    <a href="https://forms.gle/qf2wjQRHqhCquCND9" target="_blank">
+                        <button class="get-passes">Buy Now</button>
+                    </a>
+                </div>
+
+                <div class="pass platinum">
+                    <span class="most-popular">Most Popular</span>
+                    <h3>Platinum Pass</h3>
+                    <p class="price"><strike>₹800</strike> ₹449</p>
+                    <ul>
+                        <li><div class="tick-circle">&#10004;</div> Speaker session</li> 
+                        <li><div class="tick-circle">&#10004;</div> Abroad Expo</li>
+                        <li><div class="tick-circle">&#10004;</div> Entrepreneurship Challenge</li>
+                        <li><div class="tick-circle">&#10004;</div> VR Arena</li> 
+                        <li><div class="tick-circle">&#10004;</div> IPL Auction</li> 
+                        <!--<li><div class="tick-circle">&#10004;</div> Startup Pool</li>-->
+                        <!--<li><div class="tick-circle">&#10004;</div> Abroad Study</li>-->
+                        <li><div class="tick-circle">&#10004;</div>Food - Both Days</li>
+                        <li><div class="tick-circle">&#10004;</div> Standup</li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="https://forms.gle/NHzC9v3Ld7DWynvu6" target="_blank">
+                        <button class="get-passes">Buy Now</button>
+                    </a>
+                </div>
+
+                <div class="pass gold">
+                    <h3>Gold Pass</h3>
+                    <p class="price"><strike>₹600</strike> ₹349</p>
+                    <ul>
+                        <li><div class="tick-circle">&#10004;</div> Speaker session</li> 
+                        <li><div class="tick-circle">&#10004;</div> Abroad Expo</li> 
+                        <li><div class="tick-circle">&#10004;</div> Entrepreneurship Challenge</li> 
+                        <li><div class="tick-circle">&#10004;</div>Food - Day 1</li>
+                        <li>❌ VR Arena</li> 
+                        <li>❌ IPL Auction</li>
+                        <!--<li>❌ Startup Pool</li>-->
+                        <!--<li>❌ Abroad Study</li>-->   
+                        <li>❌ Standup </li>         
+                    </ul>
+                    <br>
+                    <a href="https://forms.gle/dPm8wiNM1gy5sAC47" target="_blank">
+                        <button class="get-passes">Buy Now</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

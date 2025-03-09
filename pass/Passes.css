@@ -1,0 +1,328 @@
+/* Outer page (Default background) */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+}
+
+/* Inner Container (With Border & Background Color Inside) */
+.page-container {
+    background-color: white; /* White background inside */
+    border: 2px solid purple;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px; /* Rounded corners */
+}
+
+/* Heading */
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: purple;
+}
+
+/* Get Passes Button */
+.get-passes {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+/* Passes Container */
+.pass-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+/* Individual Pass Card */
+.pass {
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+    background-size: 200% 200%;
+}
+
+.pass:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Silver Pass - Smaller */
+.silver {
+    background: linear-gradient(135deg, #d9d9d9, #f7f7f7, #bfbfbf, #ffffff, #a6a6a6);
+    width: 250px;
+    height: 360px;
+    margin-top: 20px;
+    animation: silverGradient 5s infinite linear, silverShimmer 8s ease-in-out infinite;
+}
+
+/* Gold Pass - Bigger */
+.gold {
+    background: linear-gradient(135deg, #ffd700, #ffcc00, #e6b800, #fff2cc, #d4af37);
+    width: 250px;
+    height: 360px;
+    margin-top: 20px;
+    animation: goldGradient 5s infinite linear, goldShimmer 8s ease-in-out infinite;
+}
+
+/* Platinum Pass - Bigger */
+.platinum {
+    background: linear-gradient(135deg, #e5e4e2, #f0eaff, #dcd6f7, #ffffff, #c8bfff);
+    width: 320px;
+    height: 400px;
+    animation: platinumGradient 5s infinite linear, platinumShimmer 8s ease-in-out infinite;
+}
+
+/* Most Popular Label */
+.most-popular {
+    background: purple;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px; /* Changed from -15px to -10px */
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    white-space: nowrap; /* Prevent text wrapping */
+    z-index: 1; /* Ensure label stays above the content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Optional: adds subtle shadow */
+}
+
+/* Pass Title and Price */
+.pass h3 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Price */
+.pass .price {
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.pass .price:hover {
+    animation: priceJump 0.5s ease;
+}
+
+/* Features List */
+.pass ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.pass ul li {
+    font-size: 15px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pass-container {
+        flex-wrap: wrap;
+    }
+
+    .pass {
+        max-width: 100%;
+    }
+}
+
+/* Tick Circle */
+.tick-circle {
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Outer main div */
+.main {
+    background-color: white; /* White background */
+    padding: 1px; /* 1px larger than the inner container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: calc(90% + 2px); /* 1px extra on both sides */
+    max-width: 902px; /* 900px + 1px on each side */
+}
+
+/* Inner page-container div */
+.page-container {
+    background-color: #f5f4fa; /* Light lavender inside border */
+    border: 2px solid purple; /* Purple border */
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Shining Animation for Pass Boxes */
+.pass::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(45deg);
+    }
+}
+
+/* Unique Button Hover Animations */
+.silver .get-passes {
+    transition: all 0.3s ease;
+}
+
+.silver .get-passes:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(106, 27, 154, 0.4);
+    animation: silverPulse 1s infinite, silverButtonPulse 1.5s infinite;
+    background: linear-gradient(45deg, #6A1B9A, #9C27B0);
+}
+
+.gold .get-passes:hover {
+    animation: goldRotate 0.6s ease-in-out, goldButtonGlow 1.5s infinite;
+    background: linear-gradient(45deg, #FFD700, #FFA000);
+}
+
+.platinum .get-passes:hover {
+    animation: platinumExpand 0.5s ease-in-out, platinumButtonRipple 1.5s infinite;
+    background: linear-gradient(270deg, #6A1B9A, #4B0082);
+}
+
+@keyframes silverPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes goldRotate {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes platinumExpand {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); letter-spacing: 2px; }
+    100% { transform: scale(1); }
+}
+
+@keyframes silverGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes goldGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes platinumGradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes silverShimmer {
+    0%, 100% { background-position: 0% 50%; filter: brightness(1); }
+    50% { background-position: 100% 50%; filter: brightness(1.2); }
+}
+
+@keyframes goldShimmer {
+    0% { background-position: 0% 0%; }
+    25% { background-position: 100% 0%; }
+    50% { background-position: 100% 100%; }
+    75% { background-position: 0% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+@keyframes platinumShimmer {
+    0%, 100% { 
+        background-position: 0% 50%;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    50% { 
+        background-position: 100% 50%;
+        box-shadow: 0 0 40px rgba(200, 191, 255, 0.4);
+    }
+}
+
+@keyframes silverButtonPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes goldButtonGlow {
+    0%, 100% { box-shadow: 0 0 10px #FFD700; }
+    50% { box-shadow: 0 0 20px #FFA000; }
+}
+
+@keyframes platinumButtonRipple {
+    0% { box-shadow: 0 0 0 0 rgba(106, 27, 154, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(106, 27, 154, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(106, 27, 154, 0); }
+}
+
+@keyframes priceJump {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}

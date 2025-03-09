@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Speakers | ENSPIRE'25 | 18th - 19th MAR</title>
+    <link rel="stylesheet" href="../home/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        
+        h1 {
+            font-size: 42px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+            margin-bottom: 50px;
+        }
+        
+        .speakers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .speaker {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 280px;
+            text-align: center;
+        }
+        
+        .speaker:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+        }
+        
+        .speaker img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        
+        .speaker-info {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 8px;
+            border-radius: 8px;
+            margin-top: 6px;
+        }
+        
+        .speaker-info h3 {
+            color: purple;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+        
+        .speaker-info p {
+            font-size: 11px;
+            line-height: 1.4;
+            margin: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .speakers-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="https://e-celldmce.github.io/ecelldmcehome/" target="_blank" class="logo">
+            <img src="../images/logo2.png" alt="E-Cell DMCE">
+        </a>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            
+        </button>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../events/events.html">Events</a>
+            <a href="../speaker/speaker.html">Speakers</a>
+            <a href="../sponsorship/sponsorship.html">Sponsors</a>
+            <a href="../contact us/contactus.html">Contact</a>
+        </div>
+    </div>
+    <br
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Current Speakers</h1>
+    <div class="speakers-container">
+        <div class="speaker">
+            <img src="Images/Annimika shukla .jpg" alt="ANNAMIKA SHUKLA">
+            <div class="speaker-info">
+                <h3>MS. ANNAMIKA SHUKLA</h3>
+                <p>(CORPORATE COMMUNICATION TRAINER & PUBLIC SPEAKING COACH)</p>
+            </div>
+        </div>
+        <div class="speaker">
+            <img src="Images/Dr.jpg" alt="Dr. Raj Padhiyar">
+            <div class="speaker-info">
+                <h3>DR. RAJ PADHIYAR</h3>
+                <p>(FOUNDER & CEO: DIGITAL GURUKUL)</p>
+            </div>
+        </div>
+        <div class="speaker">
+            <img src="Images/Dr Ammar khanna.png" alt="Dr Ammar khanna">
+            <div class="speaker-info">
+                <h3>Dr Ammar khanna</h3>
+                <p>(FOUNDER OF ANGRYTRADERS)</p>
+            </div>
+        </div>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="Images/Enspire-logo.png">
+        <title>Past Speakers | ENSPIRE'25 | 18th - 19th MAR</title>
+        <link rel="stylesheet" href="./speaker.css">
+        <style>
+            /* General styles */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                background-color: black;
+                color: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+    
+            .page-container {
+                width: 100%;
+                max-width: 1400px;
+            }
+    
+            .page-title {
+                font-size: 5vw;
+                color: white;
+                margin-bottom: 50px;
+                text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+            }
+    
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 0 20px;
+                width: 100%;
+            }
+    
+            .card {
+                width: 100%;
+                max-width: 280px;
+                height: 400px;
+                perspective: 1000px;
+                border: 3px solid #a349ff;
+                border-radius: 15px;
+                transition: transform 0.6s, box-shadow 0.3s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+            }
+    
+            .card-inner {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                transform-style: preserve-3d;
+                transition: transform 0.6s;
+            }
+    
+            .card:hover .card-inner {
+                transform: rotateY(180deg);
+            }
+    
+            .card:hover {
+                box-shadow: 0 0 30px 6px rgba(163, 73, 255, 0.8);
+            }
+    
+            .card-front,
+            .card-back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 15px;
+            }
+    
+            .card-front {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            .card-front img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: filter 0.3s ease;
+                border-radius: 15px;
+            }
+    
+            .speaker-name {
+                font-size: 1.2rem;
+                margin-top: 10px;
+                color: #fff;
+                font-weight: bold;
+                text-shadow: 0 0 10px #a349ff;
+            }
+    
+            .card-back {
+                background-color: #222;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+                transform: rotateY(180deg);
+                color: #fff;
+                box-shadow: 0 0 30px rgba(163, 73, 255, 0.8);
+            }
+    
+            .card-back .back-content h3 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                color: #a349ff;
+            }
+    
+            .card-back .back-content p {
+                font-size: 1rem;
+                color: #ddd;
+                line-height: 1.5;
+            }
+    
+            .card:hover .card-front img {
+                filter: blur(5px);
+            }
+    
+            @media (max-width: 768px) {
+                .page-title {
+                    font-size: 7vw;
+                }
+    
+                .container {
+                    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-container">
+            <h1 class="page-title">Past Speakers</h1>
+            <div class="container">
+                <!-- Row 1 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/ashish-chanchlani.png" alt="Speaker 1">
+                            <div class="speaker-name">Ashish Chanchlani</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Ashish Chanchlani</h3>
+                                <p>Ashish Chanchlani, a popular YouTuber and comedian, launched Ashish Chanchlani Vines in 2014. He has won multiple awards, including the Dadasaheb Phalke Award (2018) and Nickelodeon Kids' Choice Awards. He was the first Indian YouTuber to collaborate with Marvel India and made a cameo in Men in Black: International (2019).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Ali-Solanki.png" alt="Speaker 2">
+                            <div class="speaker-name">Ali Solanki</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Ali Solanki</h3>
+                                <p>Ali Solanki, founder of Imbuzi and Watermelon Gang Marketing (2022), is an entrepreneur, developer, and content creator specializing in digital marketing, crypto, and DApps, with 75K+ YouTube and 36K+ Instagram followers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Shridhar-Mankar.png" alt="Speaker 2">
+                            <div class="speaker-name">Shridhar Mankar</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Shridhar Mankar</h3>
+                                <p>Shridhar Mankar, founder of 5 Minutes Engineering, is an educator and content creator known for simplifying computer science concepts. With 535K+ YouTube subscribers, he provides accessible engineering education through his platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Arjun-Deshpande.png" alt="Speaker 2">
+                            <div class="speaker-name">Arjun Deshpande</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Arjun Deshpande</h3>
+                                <p>Arjun Deshpande, founder of Generic Aadhaar at 16, received the Wonder Kid of Pharma award (2023) and Entrepreneur of the Year (2021) for making medicines affordable in India.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Devesh-Chawla.png" alt="Speaker 2">
+                            <div class="speaker-name">Devesh Chawla</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Devesh Chawla</h3>
+                                <p>Devesh Chawla, founder & CEO of Chatur Ideas, is a startup mentor and investor, bridging entrepreneurs with funding and guidance. He has received the Mahatma Gandhi Samman, Entrepreneur of the Year (2018), and CEO of the Year (2019) awards for his contributions to the startup ecosystem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Aditi Madhan.png" alt="Speaker 2">
+                            <div class="speaker-name">Aditi Madhan</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Aditi Madhan</h3>
+                                <p>Aditi Madan, aka Momo Mami, is the founder of BluePine Foods (2016), promoting Himalayan cuisine. A MasterChef India 3 (2013) finalist, she secured funding on Shark Tank India (2021) and has sold 8M+ momos, earning awards like Indian Women Excellence Award (2019).She continues to inspire through culinary innovation & women empowerment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 3 -->
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/vaibhav goyal.jpg" alt="Speaker 2">
+                            <div class="speaker-name">Vaibhav Goyal</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Vaibhav Goyal</h3>
+                                <p>Vaibhav Goyal, founder of Predexion AI, specializes in AI-driven solutions for finance, healthcare, and logistics, leveraging machine learning to enhance business decision-making.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Malhar kalamble.jpg" alt="Speaker 2">
+                            <div class="speaker-name">Malhar Kalamble</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Malhar Kalamble</h3>
+                                <p>Malhar Kalambe, TEDx speaker and founder of Beach Please and Unaccolade, has led 250,000+ volunteers to remove 6.7M kg of waste, earning the UN Volunteer for Change Award (2018) and a spot in Forbes India's Top 100 Digital Stars (2022, 2023).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Neha Chattrjee.png" alt="Speaker 2">
+                            <div class="speaker-name">Neha Chattrjee</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Neha Chattrjee</h3>
+                                <p>Neha Chatterjee, founder of Wopreneur Media (2018), has built a 10,000+ women entrepreneur community and launched an incubation program with Venture Catalysts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/Sachin Teke.png" alt="Speaker 2">
+                            <div class="speaker-name">Sachin Teke</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Sachin Teke</h3>
+                                <p>Sachin Teke, creator of m-Indicator (2010), revolutionized Mumbai's public transport info and won the mBillionth Award (2013) and Manthan Award (2015) for digital innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/abhya phansikar.png" alt="Speaker 2">
+                            <div class="speaker-name">Abhya Phansikar</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Abhya Phansikar</h3>
+                                <p>Abhay Phansikar, Director at Azilen Technologies and former Chairman of IEEE Bombay Section (2018), is a technology expert in product engineering and embedded systems. He has also served as IEEE Bombay Section Secretary and conducted seminars on complex engineering solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/mahesh wagh.jpg" alt="Speaker 2">
+                            <div class="speaker-name">Mahesh Wagh</div>
+                        </div>
+                        <div class="card-back">
+                            <div class="back-content">
+                                <h3>Mahesh Wagh</h3>
+                                <p>Mahesh Wagh is the founder of Ekeeda, an online platform offering engineering and technical courses. Established on December 21, 2016, Ekeeda provides educational resources to students and professionals in the engineering field.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    </html>
+    
+
+     <!-- footer -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../images/logo2.png" alt="E-CELL Logo">
+                <p>📍 Location: Datta Meghe College of Engineering, Navi Mumbai</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../events/events.html">Events</a></li>
+                        <li><a href="../speaker/speaker.html">Speakers</a></li>
+                        <li><a href="../sponsorship/sponsorship.html">Sponsors</a></li>
+                        <li><a href="../faqs/faq.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="../faqs/faq.html">FAQs</a></li>
+                        <li><a href="#">Media Kit</a></li>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Volunteer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="mailto:Ecell.dmce.14@gmail.com">
+                                <img src="../images/email.png" alt="Email"> Ecell.dmce.14@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/ecell_dmce" target="_blank">
+                                <img src="../images/instaicon.jpeg" alt="Instagram"> ecell_dmce
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/e-cell-dmce/" target="_blank">
+                                <img src="../images/linkedin.png" alt="LinkedIn"> ECell_DMCE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/ecelldmce/" target="_blank">
+                                <img src="../images/Facebook.jpeg" alt="Facebook"> ECell_DMCE
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Enspire | ECELL DMCE. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
