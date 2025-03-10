@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passes | ENSPIRE'25 | 18th - 19th MAR</title>
     <link rel="icon" type="image/png" href="../images/Enspire-logo.png">
-    <link rel="stylesheet" href="./Passes.css">
+    <link rel="stylesheet" href="./ asses.css">
     <style>
-        /* Outer page (Default background) */
+               /* Outer page (Default background) */
 body {
     margin: 0;
     padding: 0;
@@ -136,16 +136,26 @@ h2 {
     align-items: center;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .pass-container {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pass {
+        width: 90%; /* Allow passes to take full width on small screens */
+        max-width: 300px; /* Prevent passes from becoming too wide */
+    }
+    .silver, .gold, .platinum {
+        visibility: visible !important;
+        opacity: 1 !important;
     }
 
-    .pass {
-        max-width: 100%;
+    body, .main {
+        height: auto;
     }
 }
+
 
 /* Tick Circle */
 .tick-circle {
