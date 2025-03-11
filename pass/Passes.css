@@ -92,7 +92,7 @@ h2 {
 
 /* Gold Pass - Bigger */
 .gold {
-    background: linear-gradient(135deg, #ffd700, #ffcc00, #e6b800, #fff2cc, #d4af37);
+    background: linear-gradient(135deg, #e5e4e2, #f0eaff, #dcd6f7, #ffffff, #c8bfff);
     width: 100% !important;
     height: auto !important;
     margin-top: 0;
@@ -101,7 +101,8 @@ h2 {
 
 /* Platinum Pass - Bigger */
 .platinum {
-    background: linear-gradient(135deg, #e5e4e2, #f0eaff, #dcd6f7, #ffffff, #c8bfff);
+ 
+    background: linear-gradient(135deg, #ffd700, #ffcc00, #e6b800, #fff2cc, #d4af37);
     width: 100% !important;
     height: auto !important;
     margin-top: 0;
